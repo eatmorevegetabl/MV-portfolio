@@ -5,7 +5,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    justify-content: flex-start;
+    /* justify-content: flex-start; */
   }
 
 .header {
@@ -14,11 +14,14 @@ body {
     background-color: rgb(101, 101, 104);
     color: darkseagreen;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
 }
 
 .header img {
-    max-height: 200px;
+    height: auto;
+    max-width: 250px;
+    width: 100%
 }
 
 .header h1 {
@@ -50,11 +53,32 @@ a {
 
 p {
     font-size: 16px;
+    color: aliceblue;
 }
 
 nav{
     display:flex;
     background-color: aliceblue;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+#first-app img {
+    max-height: 600px;
+    max-width: 75%;
+    height: auto;
+    padding: 20px 10px;
+    
+}
+
+#second-app img{
+    max-height: 200px;
+    max-width: 75%;
+    height: auto;
+    padding: 20px 10px;
 }
 
 .float-left {
@@ -65,14 +89,4 @@ nav{
 .float-right {
     float: right;
     margin-left: 25px;
-}
-
-#first-app img {
-    max-height: 600px;
-    padding: 20px 10px;
-}
-
-#second-app img{
-    max-height: 200px;
-    padding: 20px 10px;
 }
